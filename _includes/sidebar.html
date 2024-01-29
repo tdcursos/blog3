@@ -1,0 +1,54 @@
+<aside id="sidebar" class="sidebar">
+  <header class="sidebar-header">
+    <a href="{{'/' | absolute_url}}"><img src="{{site.avatar | absolute_url}}" alt="" class="avatar"></a>
+    <h2><a href="{{'/' | absolute_url}}">{{site.title}}</a></h2>
+    <p class="tagline">{{site.tagline}}</p>
+  </header>
+
+  <nav class="sidebar-nav">
+    <ul>
+      <li>
+        <a href="{{'/' | absolute_url}}">
+          <i class="bi bi-house"></i>
+          <span>Início</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{'/projetos' | absolute_url}}">
+          <i class="bi bi-folder"></i>
+          <span>Projetos</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{'/sobre' | absolute_url}}">
+          <i class="bi bi-info-circle"></i>
+          <span>Sobre</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="sidebar-icons-actions">
+    <div class="sidebar-social-icons">
+      {% include social-icons.html %}
+    </div>
+
+    <div class="sidebar-blog-resources">
+      <a href="{{'/search' | absolute_url}}"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+      <a href="{{'feed.xml' | absolute_url}}" target="_blank">
+        <i class="fa-solid fa-rss"></i>
+      </a>
+    </div>
+  </div>
+
+  <footer class="sidebar-footer">
+    <p>
+      <a href="{{site.licenseUrl}}" target="_blank">{{site.license}}</a>
+      <i class="bi bi-dot"></i>
+      <span id="currentYear">2023</span>
+    </p>
+    <p>Feito com <a href="https://jekyllrb.com/" target="_blank">Jekyll</a></p>
+  </footer>
+
+</aside>

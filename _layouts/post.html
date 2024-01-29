@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<main class="main-content hidden-animation">
+  <article>
+    <header>
+      <h1 class="post-title">{{page.title}}</h1>
+      <div class="post-meta">
+        <span>Publicado em
+          <time>{{ page.date | date: "%d . %m . %Y"}}</time>
+          <i class="bi bi-dot"></i>
+          {% include read-time.html content=page.content %}
+          <i class="bi bi-dot"></i>
+          <span class="post-categories">
+            <i class="bi bi-archive me-2"></i>
+            {% include categories.html%}
+          </span>
+        </span>
+      </div>
+
+      <figure class="post-banner">
+        <img src="{{page.image.path | absolute_url}}" alt="{{page.image.alt}}" />
+        <figcaption>{{page.image.caption}}</figcaption>
+      </figure>
+
+    </header>
+
+    <section class="content content-post">
+      {{content}}
+    </section>
+
+    <section class="post-actions">
+      <span class="post-tags">
+        <i class="bi bi-tag me-2"></i>
+        {% include tags.html%}
+      </span>
+      <span class="share-post">
+        {% include share-post.html %}
+      </span>
+    </section>
+
+    <section>
+      {% include footer.html %}
+    </section>
+
+  </article>
+
+  {% include post-panel.html %}
+</main>
