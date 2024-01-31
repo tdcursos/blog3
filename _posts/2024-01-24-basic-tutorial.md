@@ -242,7 +242,7 @@ Para adicionar legendas as suas imagens use a seguinte marcação logo abaixo do
 ```
 
 ```
-![Image](/path/for/image)
+![Image](path/for/image)
 
 Legenda da Imagem
 {: .caption-img}
