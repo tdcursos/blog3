@@ -250,7 +250,7 @@ Legenda da Imagem
 
 #### Exibição
 
-![Image](/assets/img/mockup.png)
+![Image](blog3/assets/img/mockup.png)
 
 Legenda da Imagem
 {: .caption-img}
